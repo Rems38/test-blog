@@ -1,0 +1,7 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': isGreen(),
+                'list-group-item-danger': isRed() }">
+  <h1> {{ title }} </h1> <h4> {{ content }}</h4>
+  <input type="text" class="form-control" [(ngModel)]="loveIts">
+  <h4> {{ created_at }} </h4>
+</li>

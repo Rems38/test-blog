@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>posts:</h2>
+<!--      <p>Mis à jour : {{ lastUpdate | async | date: 'yMMMMEEEEd' | uppercase }}</p>!-->
+      <ul class="list-group">
+      <app-post-list-item *ngFor="let thispost of posts"
+				    [title]="thispost.title"
+				    [content]="thispost.content"
+				    [loveIts]="thispost.loveIts"
+				    [created_at]="thispost.created_at" >
+	</app-post-list-item>
+      </ul>
+<!--       <button class="btn btn-success"
+              [disabled]="!isAuth"
+              (click)="onAllumer()">Tout allumer</button> -->
+    </div>
+  </div>
+</div>
