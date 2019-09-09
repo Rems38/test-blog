@@ -3,7 +3,7 @@
                 'list-group-item-danger': isRed() }">
   <h1> {{ title }} </h1> <h4> {{ content }}</h4>
   
-  <h4> {{ created_at | date: 'y-m-d HH:MM'}} </h4>
+  <h4> {{ created_at | date: 'y-M-d hh:mm'}} </h4>
   <input type="text" class="form-control" style="width:40px;height:40px" [(ngModel)]="loveIts"> <button class="btn btn-success"
            (click)="add()">Like</button>
     <button class="btn btn-danger"
